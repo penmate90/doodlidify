@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sketch Classification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+  
+  
+    
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <center>
+<!-- Modal -->
+<div id="myModal" class="modal fade">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      <h4 class="modal-title">Sketches</h4>
+    </div>
+
+    <div class="modal-body">
+      <img src="sketch1.png">
+      <img src="sketch2.png">
+    </div>
+
+  </div>
+</div>
+
+<h1 id="title"> <label id="head">Quick Draw</label>
+<button id="show_sketch" class="btn btn-info" data-toggle="modal" data-target="#myModal" >Show Sketch</button>
+  </h1> 
+<h4 id="sketch_name" class="labels anim"> Your Sketch Name:</h4> 
+<h4 id="sketch_accuracy" class="labels anim">Accuracy:</h4> <label id="score">Score=0</label> <label id="timer">Time left:</label>
+<h4 id="to_draw" class="labels">Sketch to draw:Line</h4>
+<br>
+<button class="btn btn-warning" onclick="clearc()">Clear Canvas</button> <br>Submit Your sketch for correction.
+<br> <button onclick="submit()" class="btn btn-primary">Submit Sketch</button>
+<h3 id="yrn"></h3>
+</center> 
+
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>

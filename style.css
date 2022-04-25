@@ -1,0 +1,69 @@
+#to_draw{
+    color: red;
+    
+}
+
+body{
+    background-color: rgb(109, 195, 188);
+}
+
+#show_sketch{
+    float: right;
+    margin-top: 4px;
+}
+
+#title{
+ background-color: rgb(255, 255, 255,0.6);
+ 
+}
+
+#head{
+    margin-left: 80px;
+}
+
+.labels{
+    font-weight: 600;
+    margin-top: 20px;
+    
+
+
+}
+
+.anim{
+    animation-name: name;
+    animation-iteration-count: infinite;
+    animation-duration:5s ;
+}
+
+
+@keyframes name{
+
+    from{font-family: 'Ubuntu', sans-seri;}
+    to{font-family: 'Comic Neue', cursive;}
+}
+
+
+canvas{
+    border-radius: 20px;
+    margin-top: 190px;
+    animation: canvas 7s  infinite;
+}
+
+@keyframes canvas{
+    0%{box-shadow: 1px 1px 40px rgb(255, 255, 255);}
+    33%{box-shadow: 1px 1px 40px rgb(179, 179, 179);}
+    66%{box-shadow: 1px 1px 40px rgb(143, 142, 142);}
+    100%{box-shadow: 1px 1px 40px rgb(255, 255, 255);}
+}
+
+
+#score{
+    float: left;
+    font-size: larger;
+}
+
+
+#timer{
+    float: right;
+    font-size: larger;
+}
